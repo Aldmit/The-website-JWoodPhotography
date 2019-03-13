@@ -1,0 +1,373 @@
+
+
+@font-face{
+  font-family:OpenSansLight;
+  src:url(fonts/OpenSansLight/OpenSans-Light.eot) format("eot"), url(fonts/OpenSansLight/OpenSans-Light.woff) format("woff"), url(fonts/OpenSansLight/OpenSans-Light.ttf) format("truetype"), url(fonts/OpenSansLight/OpenSans-Light.svg#OpenSans-Light) format("svg");
+  font-weight:400;
+  font-style:normal; }
+
+@font-face{
+  font-family:NexaLight;
+  src:url(fonts/NexaLight/nexalight.eot);
+  src:url(fonts/NexaLight/nexalight.eot?#iefix) format("embedded-opentype"), url(fonts/NexaLight/nexalight.woff2) format("woff2"), url(fonts/NexaLight/nexalight.woff) format("woff"), url(fonts/NexaLight/nexalight.ttf) format("truetype"), url(fonts/NexaLight/nexalight.svg#nexalight) format("svg"); }
+
+@font-face{
+  font-family:NexaBold;
+  src:url(fonts/NexaBold/nexabold.eot);
+  src:url(fonts/NexaBold/nexabold.eot?#iefix) format("embedded-opentype"), url(fonts/NexaBold/nexabold.woff2) format("woff2"), url(fonts/NexaBold/nexabold.woff) format("woff"), url(fonts/NexaBold/nexabold.ttf) format("truetype"), url(fonts/NexaBold/nexabold.svg#nexabold) format("svg"); }
+
+@font-face{
+  font-family:FeltTipWoman;
+  src:url(fonts/FeltTipWoman/Felt_Tip_Woman.ttf) format("truetype");
+  font-weight:400;
+  font-style:normal; }
+
+body,html{
+  margin:0;
+  padding:0;
+  width:100%; }
+
+html{
+  font-size:10px; }
+
+h1,h2,h3,h4,li,ul{
+  margin:0;
+  padding:0; }
+
+a{
+  text-decoration:none; }
+
+.b-home{
+  width:100%;
+  min-height:100vh;
+  background-image:url(img/Background01.jpg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:50% 0; }
+
+.b-nav{
+  background-color:rgba(0, 0, 0, 0);
+  text-shadow:0 0 5px #000;
+  -webkit-box-shadow:0 32px 0 -30px #cacaca;
+          box-shadow:0 32px 0 -30px #cacaca; }
+
+.b-nav,.b-nav_black{
+  -webkit-transition-duration:.5s;
+       -o-transition-duration:.5s;
+          transition-duration:.5s;
+  width:100%;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-wrap:wrap;
+      flex-wrap:wrap;
+  -webkit-box-pack:center;
+      -ms-flex-pack:center;
+          justify-content:center;
+  -webkit-box-align:center;
+      -ms-flex-align:center;
+          align-items:center;
+  min-height:9vh;
+  padding:1rem 0;
+  position:fixed;
+  top:0;
+  z-index:5; }
+
+.b-nav_black{
+  background-color:#000 !important;
+  text-shadow:0 0 5px #fff !important;
+  -webkit-box-shadow:none !important;
+          box-shadow:none !important; }
+
+.b-space{
+  min-height:7rem; }
+
+.b-menu{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-wrap:wrap;
+      flex-wrap:wrap;
+  -webkit-box-pack:center;
+      -ms-flex-pack:center;
+          justify-content:center;
+  -webkit-box-align:center;
+      -ms-flex-align:center;
+          align-items:center;
+  font-size:2.2rem;
+  font-family:NexaLight,Arial,Helvetica,sans-serif; }
+  .b-menu__item{
+    display:inline-block;
+    padding:1rem 2rem .5rem;
+    color:#fff;
+    text-decoration:none; }
+    .b-menu__item_gray{
+      color:#cacaca; }
+    .b-menu__item_white:hover{
+      border-bottom:1px solid #cacaca;
+      cursor:pointer;
+      -webkit-filter:drop-shadow(0 0 5px #fff);
+              filter:drop-shadow(0 0 5px white); }
+    .b-menu__item_gray:hover{
+      border-bottom:1px solid #000;
+      cursor:pointer;
+      color:#000; }
+
+.b-logo{
+  padding-top:11vh;
+  text-align:center; }
+
+.b-comp__item1{
+  max-width:38rem; }
+
+.b-comp__item2{
+  position:absolute;
+  margin-left:-4.5rem;
+  font-size:3rem;
+  color:#fff;
+  font-family:NexaBold,Arial Black,Gadget,sans-serif; }
+
+.b-head-text{
+  padding:2.7vh 0 11vh;
+  text-align:center; }
+
+.b-name{
+  font-size:4.8rem;
+  color:#fff; }
+  .b-name__item1{
+    font-family:NexaBold,Arial Black,Gadget,sans-serif; }
+  .b-name__item2{
+    font-family:NexaLight,Arial,Helvetica,sans-serif; }
+
+.b-scroll{
+  padding-bottom:3rem;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-wrap:wrap;
+      flex-wrap:wrap;
+  -webkit-box-pack:center;
+      -ms-flex-pack:center;
+          justify-content:center; }
+
+.b-next{
+  max-width:100%;
+  height:auto;
+  font-size:1.7rem;
+  font-family:NexaBold,Arial Black,Gadget,sans-serif;
+  color:#fff;
+  text-align:center; }
+  .b-next__text_gray{
+    color:#cacaca; }
+  .b-next_footer{
+    margin-top:18vh; }
+
+.b-arrow{
+  margin:0 auto;
+  display:block;
+  padding-top:1.5vh;
+  max-width:3rem;
+  max-height:3rem; }
+  .b-arrow_gray{
+    -webkit-filter:brightness(.9);
+            filter:brightness(.9); }
+
+.about,.b-arrow__item{
+  width:100%; }
+
+.b-info{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-wrap:wrap;
+      flex-wrap:wrap;
+  -webkit-box-pack:center;
+      -ms-flex-pack:center;
+          justify-content:center;
+  -webkit-box-align:center;
+      -ms-flex-align:center;
+          align-items:center;
+  padding:5rem 4rem 7vh; }
+  .b-info__photo{
+    max-width:60rem;
+    max-height:58rem;
+    padding-bottom:2rem; }
+
+.b-content{
+  padding:0 6rem 0 4rem;
+  max-width:55rem; }
+  .b-content__header{
+    font-size:5rem;
+    font-family:NexaLight,Arial,Helvetica,sans-serif; }
+  .b-content__text{
+    font-size:2.2rem;
+    font-family:OpenSansLight,Lucida Console,Monaco,monospace;
+    line-height:4rem; }
+  .b-content__name{
+    font-size:3rem;
+    font-family:FeltTipWoman,Comic Sans MS,cursive,sans-serif; }
+
+.b-portfolio{
+  max-width:100%;
+  min-height:100vh;
+  background-image:url(img/Background02.jpg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:50% 0; }
+
+.b-portfolio-head{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-pack:center;
+      -ms-flex-pack:center;
+          justify-content:center;
+  padding-top:6rem;
+  font-size:3.6rem;
+  color:#fff;
+  font-family:NexaLight,Arial,Helvetica,sans-serif; }
+
+.b-gallery,.b-portfolio-head,.b-portfolio-head__item{
+  max-width:100%; }
+
+.b-gallery{
+  padding:3rem 0; }
+
+.b-photo-box{
+  margin:auto;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-pack:center;
+      -ms-flex-pack:center;
+          justify-content:center;
+  -ms-flex-wrap:wrap;
+      flex-wrap:wrap; }
+  .b-photo-box__item{
+    display:block;
+    padding:2rem;
+    max-width:22rem;
+    max-height:20rem; }
+
+.b-contacts{
+  min-height:100vh; }
+
+.b-contacts:after{
+  content:"";
+  display:block;
+  width:93%;
+  position:absolute;
+  margin:-8rem 0 0 2.5%;
+  border-bottom:2px solid #cacaca; }
+
+.b-cont{
+  max-width:100%;
+  font-size:2.5rem;
+  font-family:NexaBold,Arial Black,Gadget,sans-serif;
+  padding-top:15vh; }
+  .b-cont__item{
+    max-width:100%;
+    text-align:center;
+    padding:1.5rem 0 1rem; }
+
+.b-mail__click,.b-phone__click,.b-social__click{
+  display:block;
+  text-decoration:none;
+  color:#000;
+  padding-top:1rem;
+  text-align:center;
+  font-size:5.4rem;
+  font-family:NexaLight,Arial,Helvetica,sans-serif; }
+
+.b-mail__click:hover,.b-phone__click:hover{
+  color:red; }
+
+.b-media{
+  max-height:auto;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-pack:center;
+      -ms-flex-pack:center;
+          justify-content:center; }
+  .b-media__item{
+    border-radius:100%;
+    max-width:5rem;
+    max-height:5rem;
+    margin:1rem .7rem; }
+  .b-media__item:hover{
+    cursor:pointer;
+    -webkit-filter:drop-shadow(0 0 3px #000);
+            filter:drop-shadow(0 0 3px black); }
+  @media screen and (max-width:610px){
+  .b-comp__item1{
+    max-width:60%; }
+  .b-comp__item2{
+    font-size:2.4rem;
+    margin-left:-4.05rem; }
+  .b-info,.b-info__photo{
+    max-width:100%; }
+  .b-name{
+    font-size:3.84rem; }
+  .b-content__header,.b-portfolio-head{
+    font-size:3.2rem; }
+  .b-mail__click,.b-phone__click{
+    font-size:4.86rem; }
+  .contact__photo{
+    padding-bottom:5rem; }
+  .about-me__header-text{
+    padding-top:5rem; }
+  .contact__content{
+    padding-top:4rem; }
+  .about-me__text{
+    padding-top:0; } }
+  @media screen and (max-width:470px){
+  .b-comp__item2{
+    font-size:1.8rem;
+    margin-left:-3.6rem; }
+  .b-name{
+    font-size:2.88rem; }
+  .b-content__header,.b-portfolio-head{
+    font-size:2.8rem; }
+  .b-mail__click,.b-phone__click{
+    font-size:3.24rem; }
+  .contact__photo{
+    padding-bottom:4rem; } }
+  @media screen and (max-width:350px){
+  .b-space{
+    min-height:12rem; }
+  .b-comp__item2{
+    font-size:1.2rem;
+    margin-left:-3.15rem; }
+  .b-name{
+    font-size:1.92rem; }
+  .b-content__header,.b-portfolio-head{
+    font-size:2.4rem; }
+  .b-mail__click,.b-phone__click{
+    font-size:2.16rem; } }
+  @media screen and (max-width:290px){
+  html{
+    font-size:7px; }
+  .b-space{
+    min-height:15rem; }
+  .b-name{
+    font-size:1.92rem; }
+  .b-content__header,.b-portfolio-head{
+    font-size:2.4rem; }
+  .b-cont,.b-head-text,.b-logo,.b-portfolio-head{
+    padding-bottom:4rem;
+    padding-top:4rem; }
+  .b-mail__click,.b-phone__click{
+    font-size:2.7rem; } }
+  @media screen and (max-width:205px){
+  html{
+    font-size:4px; }
+  .b-space{
+    min-height:18rem; }
+  .b-photo-box__item{
+    max-width:70%;
+    max-height:15rem; }
+  .b-cont,.b-head-text,.b-logo,.b-portfolio-head{
+    padding-bottom:2rem;
+    padding-top:2rem; } }
+
